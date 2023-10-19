@@ -33,6 +33,9 @@ bash extract.sh
 
 Use the implementation of the BLIP2 caption pipeline. Refer to [this paper](https://arxiv.org/abs/2307.08526) for details.
 
+## Implement Modification on Diffuser for Customized Training Data Synthesis
+TODO: Release Modified diffusers for direct installation
+
 ## Train LoRA
 
 1. Specify `CACHE_ROOT/MODEL_NAME` to the folder caching stable diffusion.
