@@ -36,10 +36,10 @@ Use the implementation of the BLIP2 caption pipeline. Refer to [this paper](http
 ## Train LoRA
 
 1. Specify `CACHE_ROOT/MODEL_NAME` to the folder caching stable diffusion.
-2. Check `./LoRA/train_lora.sh` and specify the data version in "versions" for training LoRA.
+2. Check `./finetune/train_lora.sh` and specify the data version in "versions" for training LoRA.
 
 ```bash
-bash ./LoRA/train_lora.sh
+bash ./finetune/train_lora.sh
 ```
 
 ## Generate Synthetic Dataset
