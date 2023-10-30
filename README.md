@@ -20,7 +20,7 @@ Download ImageNet-1K from [this link](https://www.image-net.org/download.php).
 
 ## (Optional) Download Generated Synthetic Dataset
 
-We will shortly release the synthetic data.
+You can download the generated synthetic data from [Dataset Link](https://huggingface.co/datasets/JianhaoDYDY/Real-Fake). Please follow the instruction on Huggingface Dataset page.
 
 ## Extract CLIP Embedding for ImageNet-1K
 
