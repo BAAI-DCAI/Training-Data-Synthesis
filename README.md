@@ -16,13 +16,16 @@ pip3 install -r requirements.txt
 
 ## Prepare Dataset
 
-Download ImageNet-1K from [this link](https://www.image-net.org/download.php).
 
-## (Optional) Download Generated Synthetic Dataset
+
+## Download Generated Synthetic Dataset
 
 You can download the generated synthetic data from [Dataset Link](https://huggingface.co/datasets/JianhaoDYDY/Real-Fake). Please follow the instruction on Huggingface Dataset page.
 
-## Extract CLIP Embedding for ImageNet-1K
+## (Optional) Generate Synthetic Dataset from Scratch
+Download ImageNet-1K from [this link](https://www.image-net.org/download.php).
+
+### Extract CLIP Embedding for ImageNet-1K
 
 1. Check `./extract.sh` and specify the path to the ImageNet data.
 
@@ -30,14 +33,14 @@ You can download the generated synthetic data from [Dataset Link](https://huggin
 bash extract.sh
 ```
 
-## Get BLIP2 Caption for ImageNet-1K
+### Get BLIP2 Caption for ImageNet-1K
 
 Use the implementation of the BLIP2 caption pipeline. Refer to [this paper](https://arxiv.org/abs/2307.08526) for details.
 
-## Implement Modification on Diffuser for Customized Training Data Synthesis
+### Implement Modification on Diffuser for Customized Training Data Synthesis
 TODO: Release Modified diffusers for direct installation
 
-## Train LoRA
+### Train LoRA
 
 1. Specify `CACHE_ROOT/MODEL_NAME` to the folder caching stable diffusion.
 2. Check `./finetune/train_lora.sh` and specify the data version in "versions" for training LoRA.
@@ -46,7 +49,7 @@ TODO: Release Modified diffusers for direct installation
 bash ./finetune/train_lora.sh
 ```
 
-## Generate Synthetic Dataset
+### Generate Synthetic Dataset
 
 1. After training, load the trained LoRA model to generate the Synthetic Dataset.
 2. Check `shell_generate.sh` and specify the data version (1 out of 20) in "versions" for generation.
